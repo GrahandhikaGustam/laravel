@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/me', [AuthController::class, 'index']);
+Route::get('/me', function () {
 return [
     "NIS" => 3103119081,
     "Name" => "Grahandhika Gustam Awansyah Putra",
@@ -25,3 +25,4 @@ return [
     "Phone" => 6281225936018,
     "Class" => "XII RPL 3",
 ];
+});
