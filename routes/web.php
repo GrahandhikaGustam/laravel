@@ -16,3 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/me', [AuthController::class, 'index']);
+return [
+    "NIS" => 3103119081,
+    "Name" => "Grahandhika Gustam Awansyah Putra",
+    "Gender" => "Laki-laki",
+    "Phone" => 6281225936018,
+    "Class" => "XII RPL 3",
+];
