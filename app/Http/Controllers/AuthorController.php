@@ -132,7 +132,7 @@ class AuthorController extends Controller
             $author ->delete();
             return response()->json([
                 'status' => 200,
-                'data' => $author
+                'message' => 'data berhasil dihapus'
             ],200);
         }else{
             return response()->json([
